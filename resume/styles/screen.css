@@ -1,0 +1,505 @@
+html
+{
+	background-color: #204028;
+	background-image: url( '../images/marble-texture-1000.png' );
+	background-repeat: repeat;
+	background-size: 33em;
+	cursor: default;
+}
+
+body
+{
+	background-color: white;
+	background-image: url( '../images/linen-texture-1000.png' );
+	background-repeat: repeat;
+	background-size: 22em;
+	box-shadow: 0.25em 0.25em 0.5em #000000,
+	            inset 1pt 1pt 0 rgba( 255, 255, 255, 0.5 );
+	font-size: 1.5vw;
+	margin-bottom: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	min-height: 90em;
+	width: calc( 100% - 6em );
+}
+
+ol, ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p
+{
+	margin: 0;
+}
+
+a
+{
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #005bc2;
+}
+
+/* Header Styles */
+header
+{
+	background-position: bottom center;
+	background-image: url( '../images/zig-zag-1000.png' );
+	background-repeat: repeat-x;
+	background-size: 15em;
+	margin-bottom: 0.5em;
+	padding-bottom: 3.5em;
+	position: relative;
+}
+
+#name
+{
+	color: #000000;
+	font-family: 'Open Sans Condensed';
+	font-size: 5em;
+	font-weight: 700;
+	padding-top: 0.9em;
+	position: relative;
+	text-align: center;
+	text-shadow: calc(0.04em - 1pt) calc(0.04em - 1pt) 0 #e4e4dc,
+	             0.04em 0.04em 0 #000000;
+	text-transform: uppercase;
+}
+
+#title
+{
+	color: #222222;
+	font-family: 'Roboto Slab';
+	font-size: 1.5em;
+	font-style: italic;
+	font-weight: 300;
+	position: absolute;
+	margin-top: 2em;
+	text-align: center;
+	top: 0;
+	width: 100%;
+}
+
+/* Section Styles */
+section
+{
+	box-sizing: border-box;
+	color: #444444;
+	display: inline-block;
+	font-family: 'Roboto Slab';
+	font-size: 1em;
+	font-weight: 300;
+	padding: 1em;
+	text-align: left;
+}
+
+section .heading
+{
+	border-bottom-color: #c27b00;
+	border-bottom-style: solid;
+	border-bottom-width: 3pt;
+	color: #333333;
+	font-family: 'Open Sans Condensed';
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+section .subheading
+{
+	border-top-color: rgba( 255, 255, 255, 0.75 );
+	border-top-style: solid;
+	border-top-width: 2pt;
+	color: #333333;
+	font-family: 'Open Sans Condensed';
+	font-size: 1.33em;
+	font-weight: 700;
+	margin-bottom: 0.33em;
+	margin-top: 0.5em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.more
+{
+	background: none;
+	border-color: black;
+	border-radius: 0.25em;
+	border-style: solid;
+	border-width: 1pt;
+	cursor: pointer;
+	font-size: 1em;
+	font-family: 'Roboto Slab';
+	font-weight: 600;
+	opacity: 0.33;
+	outline: none;
+	text-transform: uppercase;
+	transition: background 0.5s, opacity 0.5s;
+	padding: 0.1em 0.5em;
+}
+
+.more:hover
+{
+	background-color: rgba( 0, 0, 0, 0.11 );
+	opacity: 0.67;
+}
+
+#more-skills + .more
+{
+	position: relative;
+	top: -1em;
+}
+
+#about,
+#contact,
+#education
+{
+	clear: both;
+	float: left;
+	padding-right: 0.5em;
+	width: calc( 100% / 3 );
+}
+
+#about p
+{
+	margin-top: 1em;
+}
+
+#skills,
+#experience
+{
+	padding-left: 0.5em;
+	width: calc( 100% / 3 * 2 );
+}
+
+#skills
+{
+	text-align: center;
+}
+
+#basic-skills,
+#more-skills
+{
+	border-spacing: 2.5vw;
+	display: table;
+}
+
+#basic-skills li,
+#more-skills li
+{
+	border-color: rgba( 255, 255, 255, 0.75 );
+	border-style: solid;
+	border-radius: 50%;
+	border-width: 5pt;
+	display: table-cell;
+	height: 7em;
+	text-align: center;
+	vertical-align: middle;
+	width: 7em;
+}
+
+#basic-skills a,
+#more-skills a
+{
+	position: relative;
+	z-index: 2;
+}
+
+#basic-skills .css:before,
+#basic-skills .sass:before,
+#basic-skills .jquery:before,
+#basic-skills .social-media:before,
+#basic-skills .wordpress:before,
+#basic-skills .sql:before,
+#more-skills .illustrator:before,
+#more-skills .c-sharp:before,
+#more-skills .java:before,
+#more-skills .apache:before,
+#more-skills .table-tennis:before,
+#more-skills .softball:before
+{
+	content: '';
+	display: block;
+}
+
+#more-skills
+{
+	display: none;
+	margin-top: -1.5em;
+}
+
+#advanced-skills li
+{
+	float: left;
+	margin-bottom: 0.25em;
+	text-align: left;
+	width: 50%;
+}
+
+#advanced-skills li:nth-child(even)
+{
+	width: 45%;
+}
+
+#advanced-skills li:nth-child(odd)
+{
+	width: 55%;
+}
+
+#schools time
+{
+	display: block;
+	font-size: 0.9em;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+.school
+{
+	margin-top: 1em;
+}
+
+.school:not(:last-child)
+{
+	margin-bottom: 2em;
+}
+
+.school h2
+{
+	font-size: 1.1em;
+	font-weight: 300;
+}
+
+.school ul
+{
+	background-color: #ffffff;
+	border-color: #000000;
+	border-style: solid;
+	border-width: 1pt;
+	box-shadow: 0.25em 0.25em 0 #ffffff,
+	            0.25em 0.25em 0 1px #000000,
+	            0.5em 0.5em 0 #ffffff,
+	            0.5em 0.5em 0 1px #000000;
+	margin-bottom: 1em;
+	margin-top: 0.5em;
+	padding: 1em;
+	width: calc( 100% - 4em );
+}
+
+.school li
+{
+	margin-top: 1em;
+	position: relative;
+}
+
+.school li:first-child
+{
+	margin-top: 0;
+}
+
+.school li::before
+{
+	background-image: url( '../images/linen-texture-1000.png' );
+	background-repeat: no-repeat;
+	background-size: 22em;
+	border-color: #000000 #000000 transparent transparent;
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 1pt 1pt 1pt 1pt;
+	content: '';
+	display: block;
+	height: 1em;
+	left: -1.6em;
+	position: absolute;
+	top: 0;
+	-webkit-transform: rotate( 45deg );
+	transform: rotate( 45deg );
+	width: 1em;
+}
+
+.employment
+{
+	border-bottom: solid 2pt #c27b00;
+	box-shadow: 0 1pt #9e6707;
+	color: transparent;
+	display: block;
+	margin-top: 1em;
+	padding-bottom: 0.5em;
+	width: 100%;
+}
+
+.employment .began,
+.employment .ended
+{
+	color: #c27b00;
+	font-family: 'Open Sans Condensed';
+	font-size: 1em;
+	font-weight: 700;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.employment .began:after,
+.employment .ended:after
+{
+	border-color: transparent;
+	border-bottom-color: #c27b00;
+	border-style: solid;
+	border-width: 0.5em;
+	content: ' ';
+	height: 0;
+	left: 50%;
+	margin-left: -0.5em;
+	pointer-events: none;
+	position: absolute;
+	top: calc( 100% - 0.4em );
+	width: 0;
+}
+
+.employment .ended
+{
+	float: right;
+}
+
+.employer .position
+{
+	font-size: 1.25em;
+	font-weight: 300;
+	margin-top: 0.5em;
+}
+
+.employer .location
+{
+	font-size: 0.9em;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.employer p
+{
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+#contact dl
+{
+	position: relative;
+}
+
+#contact dt,
+#contact dd
+{
+	background: #ffffff;
+	display: inline-block;
+	margin: 0;
+}
+
+#contact dt
+{
+	float: left;
+	font-family: 'Open Sans Condensed';
+	font-weight: 700;
+	height: 2.75em;
+	left: -1.15em;
+	line-height: 2.75em;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-transform: rotate( 270deg );
+	transform: rotate( 270deg );
+	width: 5em;
+}
+
+#contact dd
+{
+	box-sizing: border-box;
+	font-size: 1.1em;
+	font-weight: 700;
+	height: calc( 5em / 1.1 );
+	margin-bottom: 0.25em;
+	margin-left: 2.75em;
+	padding: 1em;
+	text-align: center;
+	width: calc( 100% - 2.75em );
+}
+
+#contact dd.phone,
+#contact dd.email
+{
+	padding-bottom: 1.75em;
+	padding-top: 1.75em;
+}
+
+.phone,
+.email
+{
+	letter-spacing: 0.05em;
+}
+
+dt.online { top: 1.15em; }
+dt.phone { top: 6.4em; }
+dt.email { top: 11.6em; }
+
+dd.online
+{
+	font-size: 0;
+}
+
+dd.online li
+{
+	display: inline-block;
+	height: 2.5em;
+	width: 2.5em;
+}
+
+dd.online a
+{
+	background-image: url( '../images/social-media-icons.png' );
+	background-position: 0 100%;
+	background-size: 700% 200%;
+	border-radius: 50%;
+	color: transparent !important;
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+dd.online a:hover
+{
+	border: none;
+	color: transparent;
+}
+
+dd.online .linkedin a { background-position: calc(100% / 6 * 5) 100%; }
+dd.online .facebook a { background-position: calc(100% / 6 * 0) 100%; }
+dd.online .twitter a { background-position: calc(100% / 6 * 1) 100%; }
+dd.online .website a { background-position: calc(100% / 6 * 2) 100%; }
+
+dd.online .linkedin a:hover { background-position: calc(100% / 6 * 5) 0; }
+dd.online .facebook a:hover { background-position: calc(100% / 6 * 0) 0; }
+dd.online .twitter a:hover { background-position: calc(100% / 6 * 1) 0; }
+dd.online .website a:hover { background-position: calc(100% / 6 * 2) 0; }
+
+.chart
+{
+	position: relative;
+	z-index: 1;
+}
+
+.chart canvas
+{
+	height: calc( 100% + 14px );
+	left: -7px;
+	position: absolute;
+	top: -7px;
+	width: calc( 100% + 14px );
+}
