@@ -1,0 +1,73 @@
+@media screen and (max-width: 640px)
+{
+	body
+	{
+		width: calc( 100% - 2em );
+	}
+
+	#name
+	{
+		font-size: 7em;
+	}
+
+	section
+	{
+		display: block;
+		float: none;
+		width: 100%;
+	}
+
+	#about, #contact, #education, #skills, #experience
+	{
+		width: 100%;
+	}
+
+	section
+	{
+		font-size: 2em;
+	}
+
+	#basic-skills li, #more-skills li
+	{
+		font-size: 0.9em;
+		height: 6.66em;
+		width: 25%;
+	}
+
+	dt.online
+	{
+		top: 1.9em;
+	}
+
+	dt.phone
+	{
+		top: 8.6em;
+	}
+
+	dt.email
+	{
+		top: 15.35em;
+	}
+
+	dd.online li
+	{
+		height: 4em;
+		width: 4em;
+	}
+
+	#contact dt
+	{
+		left: -1.9em;
+		width: 6.5em;
+	}
+
+	#contact dd
+	{
+		height: calc( 6.5em / 1.1 )
+	}
+
+	#contact dd a
+	{
+		font-size: 1.75em;
+	}
+}
